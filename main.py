@@ -11,7 +11,7 @@ random_quote = quotes_list[random.randint(0, len(quotes_list)-1)]
 now = dt.datetime.now()
 day_of_week = now.weekday()
 
-if day_of_week == 2:
+if day_of_week == 0:
     email1 = "xyz@gmail.com"
     password1 = "***"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
